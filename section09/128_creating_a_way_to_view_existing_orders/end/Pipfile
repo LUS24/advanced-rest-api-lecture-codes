@@ -11,6 +11,7 @@ Flask-SQLAlchemy = "*"
 flask-marshmallow = "*"
 marshmallow-sqlalchemy = "*"
 marshmallow = "*"
+python-dotenv = "*"
 stripe = "*"
 
 [dev-packages]
