@@ -9,9 +9,9 @@ Flask-JWT-Extended = "*"
 Flask-RESTful = "*"
 Flask-SQLAlchemy = "*"
 flask-marshmallow = "*"
-python-dotenv = "*"
 marshmallow-sqlalchemy = "*"
-marshmallow = "==3.0.0b19"
+marshmallow = "*"
+python-dotenv = "*"
 stripe = "*"
 
 [dev-packages]
