@@ -12,7 +12,7 @@ Flask-SQLAlchemy = "*"
 python-dotenv = "*"
 flask-marshmallow = "*"
 marshmallow-sqlalchemy = "*"
-marshmallow = "==3.0.0b12"
+marshmallow = "*
 
 [dev-packages]
 
