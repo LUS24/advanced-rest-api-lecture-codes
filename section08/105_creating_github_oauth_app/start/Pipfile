@@ -11,7 +11,7 @@ Flask-RESTful = "*"
 Flask-SQLAlchemy = "*"
 python-dotenv = "*"
 marshmallow-sqlalchemy = "*"
-marshmallow = "*
+marshmallow = "==3.0.0b12"
 
 [dev-packages]
 
