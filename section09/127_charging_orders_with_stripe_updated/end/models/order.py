@@ -42,12 +42,14 @@ class OrderModel(db.Model):
         # See your keys here: https://dashboard.stripe.com/account/apikeys
         stripe.api_key = os.getenv("STRIPE_API_KEY")
 
-        return stripe.Charge.create(
-            amount=self.amount,
+        intent = stripe.PaymentIntent.create(
+            amount=1000,
             currency=CURRENCY,
-            description=self.description,
-            source=token
+            payment_method="pm_card_visa"
         )
+        return {
+            'clientSecret': intent['client_secret']
+        }
 
     def set_status(self, new_status: str) -> None:
         """
